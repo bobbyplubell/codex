@@ -393,6 +393,9 @@ cargo clippy --tests
 cargo test
 ```
 
+Alternatively, run `./build.sh` from the repository root to execute the above
+steps automatically.
+
 </details>
 
 ---
