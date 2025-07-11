@@ -104,6 +104,7 @@ export OPENAI_API_KEY="your-api-key-here"
 > - azure
 > - gemini
 > - ollama
+> - llama_cpp
 > - mistral
 > - deepseek
 > - xai
@@ -419,6 +420,11 @@ Below is a comprehensive example of `config.json` with multiple custom providers
       "baseURL": "http://localhost:11434/v1",
       "envKey": "OLLAMA_API_KEY"
     },
+    "llama_cpp": {
+      "name": "llama.cpp",
+      "baseURL": "http://localhost:8080/v1",
+      "envKey": "LLAMA_CPP_API_KEY"
+    },
     "mistral": {
       "name": "Mistral",
       "baseURL": "https://api.mistral.ai/v1",
@@ -476,6 +482,9 @@ export AZURE_OPENAI_API_VERSION="2025-04-01-preview" (Optional)
 
 # OpenRouter
 export OPENROUTER_API_KEY="your-openrouter-key-here"
+
+# llama.cpp (no key required, but the variable can be set if desired)
+export LLAMA_CPP_API_KEY="dummy"
 
 # Similarly for other providers
 ```
