@@ -114,7 +114,7 @@ export function getApiKey(provider: string = "openai"): string | undefined {
   const providersConfig = config.providers ?? providers;
   const providerInfo = providersConfig[provider.toLowerCase()];
   if (providerInfo) {
-    if (providerInfo.name === "Ollama") {
+    if (providerInfo.name === "Ollama" || providerInfo.name === "llama.cpp") {
       return process.env[providerInfo.envKey] ?? "dummy";
     }
     return process.env[providerInfo.envKey];

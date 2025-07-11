@@ -56,6 +56,15 @@ name = "Ollama"
 base_url = "http://localhost:11434/v1"
 ```
 
+Likewise, a local [llama.cpp](https://github.com/ggerganov/llama.cpp) server can
+be added as:
+
+```toml
+[model_providers.llama_cpp]
+name = "llama.cpp"
+base_url = "http://localhost:8080/v1"
+```
+
 Or a third-party provider (using a distinct environment variable for the API key):
 
 ```toml

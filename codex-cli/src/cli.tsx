@@ -382,7 +382,7 @@ if (cli.flags.free && provider.toLowerCase() === "openai") {
 }
 
 // Set of providers that don't require API keys
-const NO_API_KEY_REQUIRED = new Set(["ollama"]);
+const NO_API_KEY_REQUIRED = new Set(["ollama", "llama_cpp"]);
 
 // Skip API key validation for providers that don't require an API key
 if (!apiKey && !NO_API_KEY_REQUIRED.has(provider.toLowerCase())) {

@@ -27,6 +27,11 @@ export const providers: Record<
     baseURL: "http://localhost:11434/v1",
     envKey: "OLLAMA_API_KEY",
   },
+  llama_cpp: {
+    name: "llama.cpp",
+    baseURL: "http://localhost:8080/v1",
+    envKey: "LLAMA_CPP_API_KEY",
+  },
   mistral: {
     name: "Mistral",
     baseURL: "https://api.mistral.ai/v1",

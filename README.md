@@ -110,6 +110,15 @@ name = "Ollama"
 base_url = "http://localhost:11434/v1"
 ```
 
+If you are running a local [llama.cpp](https://github.com/ggerganov/llama.cpp)
+server, define a provider for it as well:
+
+```toml
+[model_providers.llama_cpp]
+name = "llama.cpp"
+base_url = "http://localhost:8080/v1"
+```
+
 The `base_url` will have `/chat/completions` appended to it to build the full URL for the request.
 
 For providers that also require an `Authorization` header of the form `Bearer: SECRET`, an `env_key` can be specified, which indicates the environment variable to read to use as the value of `SECRET` when making a request:
